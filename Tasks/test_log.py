@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-import time
 
 
 @pytest.fixture
@@ -27,4 +26,3 @@ def test_log(driver):
         for l in driver.get_log("browser"):
             print(l)
         driver.back()
-    time.sleep(5)
